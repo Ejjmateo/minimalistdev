@@ -1,0 +1,213 @@
+
+#title h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 4rem;
+}
+.container{
+    width: 100%;
+}
+#title{
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("ecebg.jpg");
+    background-color: gray;
+    background-blend-mode: multiply;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+#title p{
+    font-weight: 200;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+}
+.profile-pic{
+    border-radius: 50%;
+}
+hr{
+    text-align: center;
+    border: 6px dotted;
+    border-bottom: none;
+    margin: 100px, auto;
+    width: 5%
+    
+}
+.grid{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: auto;
+    gap: 1rem;
+}
+.grid p{
+    text-align: justify;
+}
+.grid-head{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+}
+.skill-image1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+}
+.skill1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content:flex-start;
+    
+}
+.skill-image2{
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    justify-content: center;
+}
+.skill2{
+    grid-area: 3 / 3 / 4 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content:flex-start;
+}
+.skill-image3{
+    grid-area: 4 / 2 / 4 / 3;
+    display: flex;
+    justify-content: center;
+}
+.skill3{
+    grid-area: 4 / 3 / 4 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content:flex-start;
+}
+.grid h3{
+    font-family: 'Bebas Neue', sans-serif;
+}
+.grid p{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    align-items:center;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+.contact-me h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+}
+.contact-me h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+}
+.contact-me p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;    
+}
+@media (max-width: 700px){
+    .grid{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 250px 100px 250px 100px 250px 100px;
+        height: auto;
+        gap: 0.2rem;
+        margin-top: 0;
+    }
+    .grid p{
+        text-align: justify;
+    }
+    .grid img{
+        height: 250px;
+        width: 100%;
+    }
+    .grid-head{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+    }
+    .skill-image1{
+        grid-column-start: 1;
+        grid-column-end: -1;
+       grid-row-start: 2;
+       grid-row-end: 3;
+        display: flex;
+        justify-content: center;
+    }
+    .skill1{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .skill-image2{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        display: flex;
+        justify-content: center;
+    }
+    .skill2{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .skill-image3{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        display: flex;
+        justify-content: center;
+    }
+    .skill3{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-evenly;
+        align-items:center;
+    }
+}
